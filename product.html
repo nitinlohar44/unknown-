@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="ecommerce_style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <title>Drip Wear</title>
+    </head>
+    <body>
+          
+        <section id="header">
+             <a href="#"><img src="images/club.png" class="logo" title="Drip Wear"></a>
+            
+             <div class="search-container">
+    <input type="text" placeholder="Search here..." class="search-input" title="Search Here">
+    <button class="search-btn">Search</button>
+            </div>
+            
+            <div>
+                <ul id="navbar">
+                    <li><a class="active" href="Home.html"><i class="fa-solid fa-house" title="Home Page"></i></a></li>
+                    <li><a href="product.html"><i class="fa-solid fa-shirt" title="Products Page"></i></a></li>
+                    <li><a href="cart.html"><i class="fa-solid fa-bag-shopping" title="Cart Page"></i></a></li>
+                </ul>
+                
+            </div>
+            
+     <div class="menu-container">
+    
+    <input type="checkbox" id="menu-toggle">                  
+    
+    <!-- Hamburger Icon -->
+    <label for="menu-toggle" class="menu-icon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+
+    <!-- Dropdown Menu -->
+    <div class="dropdown-menu">
+      <a href="cart.html">Cart</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
+    </div> 
+
+
+
+    <!-- Filter Button -->
+<button class="filter-btn" onclick="toggleFilter()">Filter</button>
+
+<section class="shop-container">
+
+    <!-- FILTER SIDEBAR -->
+    <aside class="filters" id="filterPanel">
+        <button class="close-btn" onclick="toggleFilter()">✖</button>
+        <h3>Filters</h3>
+
+        <h4>Category</h4>
+        <ul>
+            <li><input type="checkbox"> Men</li>
+            <li><input type="checkbox"> Women</li>
+            <li><input type="checkbox"> Kids</li>
+        </ul>
+    </aside>
+
+    <!-- PRODUCT GRID -->
+    <div class="products">
+        <!-- Your product cards -->
+    </div>
+
+</section>
+  
+
+
+
+
+        
+
+
+         
+        
+
+        
+
+
+        <script src="E_commerce.js"> </script>
+    </body>
+</html> 

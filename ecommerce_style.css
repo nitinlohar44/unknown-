@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+    color: black;
+}
+.section-p1{
+    padding: 0px 80px;
+}
+
+
+
+
+.shop-container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* FILTER BUTTON */
+.filter-btn {
+    padding: 10px 10px;
+    background: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin: 20px;
+}
+
+/* SIDEBAR */
+.filters {
+    width: 250px;
+    background: #f5f5f5;
+    padding: 20px;
+
+    position: fixed;
+    top: 0;
+    left: -300px;   /* Hidden outside screen */
+    height: 100%;
+    transition: 0.3s;
+}
+
+/* When active */
+.filters.active {
+    left: 0;
+}
+
+/* Close button */
+.close-btn {
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.section-p1{
+    margin: 40px 0;
+}
+.logo{
+    height: 100px;
+    width: 180px;
+}
+
+body{
+  width: 100%;
+
+}
+.search-container {
+  display: flex;
+  width: 650px;
+  height: auto;
+}
+
+.search-input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-right: none;
+  border-radius: 10px 0 0 10px;
+  outline: none;
+}
+
+.search-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 2px solid #333;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+  border-radius: 0 5px 5px 0;
+}
+
+
+#header{
+  position: fixed;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 60px;
+    background-color: #edf4f4;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#navbar li{
+    list-style: none;
+    padding: 10px 30px;
+    position: right;
+    
+}
+
+#navbar i{
+  font-size: 30px;
+  transform: 0.3s;
+}
+#navbar li a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: grey;
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active{
+    color: blue;
+   
+} 
+/* 
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: "";
+    width: 40px;
+    height: 2px;
+    background-color:black;
+    position: absolute;
+    bottom: -4px;
+    left: 30px;
+} */
+
+/* Hide checkbox */
+#menu-toggle {
+  display: none;
+}
+
+.menu-container {
+  position: relative;
+  padding: 20px;
+}
+
+/* Hamburger icon */
+.menu-icon {
+  width: 30px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.menu-icon span {
+  height: 2px;
+  background: black;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+  position: absolute;
+  top: 60px;
+  left: 5px;
+  width: 110px;
+  background: gray;
+  display: none;
+  flex-direction: column;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.dropdown-menu a {
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+  color: white;
+  
+}
+
+.dropdown-menu a:hover {
+  background: #444;
+  
+}
+
+
+
+#menu-toggle:checked + .menu-icon + .dropdown-menu {
+  display: flex;
+}
+
+#Topblock{
+    background-image: url(images/clothing1.png);
+    height: 85vh;
+    width: 100%;
+    padding: 29px 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+} 
+
+
+#feature{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#feature .feature-box{
+  width: 180px;
+  text-align: center; 
+  padding: 10px 15px; 
+  box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.06);
+  border: 1px solid #cce7d0;
+  border-radius: 4px;
+  margin: 15px 0;
+}
+.small{
+  width: 150px;
+  height: auto;
+}
+
+#feature .feature-box:hover{
+  box-shadow: 10px 10px 54px rgba(198, 63, 63, 0.1);
+}
+#feature .feature-box h6{
+  padding: 9px 8px 9px 8px;
+  display: inline-block;
+  line-height: 1;
+  border-radius: 5px;
+  background-color: aquamarine;
+}
+
+#arival{
+  background-image: url(images/arivals.png);
+    height: 30vh;
+    width: 100%;  
+    padding: 100px 150px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
